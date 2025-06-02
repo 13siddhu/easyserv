@@ -1,28 +1,55 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const about = () => {
+export default function About() {
+    const navigate = useNavigate();
   return (
-    <section className="bg-white py-12 px-6 md:px-16 lg:px-32 text-gray-800">
-      <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold mb-6 text-center">About Me</h2>
-        <p className="text-lg leading-relaxed mb-4">
-          Hello! I'm <span className="font-semibold text-blue-600">Siddhartha Singh</span>, a Computer Science and Engineering student at VIT Bhopal University (Batch 2023–2027), with a CGPA of 7.7. I'm passionate about crafting digital experiences that solve real-world problems.
-        </p>
-        <p className="text-lg leading-relaxed mb-4">
-          As a tech-savvy developer, I've interned as a Web Developer at Cosmic365 and built several projects including <span className="font-medium text-gray-900">VirtuSync</span> (a real-time video calling platform), <span className="font-medium text-gray-900">Sid Blogs</span>, and a <span className="font-medium text-gray-900">Live Weather Forecast App</span>.
-        </p>
-        <p className="text-lg leading-relaxed mb-4">
-          I'm currently focused on full-stack development and backend engineering, especially technologies like Node.js, Express, MongoDB, and JWT. I'm also working on exciting ideas like emotion-based feedback in video calls and AI-driven tools for agriculture.
-        </p>
-        <p className="text-lg leading-relaxed">
-          Inspired by Dr. APJ Abdul Kalam, I strive to combine technology with purpose and contribute meaningfully to society. Let’s connect and build something impactful together!
+    <div className="max-w-4xl mx-auto p-6 text-gray-400">
+      <h1 className="text-4xl font-bold text-center mb-6 text-yellow-300">About Us</h1>
+
+      <p className="text-lg mb-4">
+        <strong>Welcome to EasyServ – Where Cleanliness Meets Convenience</strong>
+      </p>
+
+      <p className="mb-4">
+        At <span className="font-semibold">EasyServ</span>, we believe a clean home is a happy home. Founded with the mission to bring reliable,
+        affordable, and high-quality home cleaning services to every doorstep, we’re here to simplify your life –
+        one spotless room at a time.
+      </p>
+
+      <p className="mb-4">
+        We are a tech-enabled platform that connects you with trained, background-verified cleaning professionals who bring not just efficiency,
+        but also a personal touch to your home. Whether it’s regular housekeeping, deep cleaning, or post-renovation
+        cleanup, EasyServ ensures every corner sparkles.
+      </p>
+
+      <div className="my-6">
+        <h2 className="text-2xl font-semibold mb-2 text-blue-400">Our Vision</h2>
+        <p>
+          To become India's most trusted home service brand, setting the benchmark for quality, safety, and customer delight.
         </p>
       </div>
-    </section>
+
+      <div className="my-6">
+        <h2 className="text-2xl font-semibold mb-2 text-blue-400">Our Mission</h2>
+        <p>
+          To make professional cleaning accessible, flexible, and eco-friendly – tailored around your schedule and lifestyle.
+        </p>
+      </div>
+
+      <div className="my-6">
+        <h2 className="text-2xl font-semibold mb-2 text-blue-400">What Makes Us Different?</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li><strong>Instant Booking & Transparent Pricing:</strong> Know exactly what you're getting and when. No surprises.</li>
+          <li><strong>Vetted Professionals:</strong> Each cleaner is trained, experienced, and fully background-checked.</li>
+          <li><strong>Eco-Conscious Choices:</strong> We prioritize safe and sustainable cleaning products.</li>
+          <li><strong>Customer-First Approach:</strong> Your satisfaction is our #1 goal. Every service comes with a quality guarantee.</li>
+        </ul>
+      </div>
+
+      <p className="mt-6 text-lg font-medium text-gray-400">
+        Join thousands of happy customers who trust EasyServ to keep their homes clean, fresh, and stress-free.
+      </p>
+    </div>
   );
-};
-
-const navigate = useNavigate();
-
-export default about;
+}
