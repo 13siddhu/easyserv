@@ -34,6 +34,10 @@ const HomePage = () => {
   navigate('/login');
 };
 
+const aboutme = () => {
+  navigate('/about');
+}
+
   const testimonials = [
     {
       quote: "EasyServ has been a lifesaver! Their team is professional, thorough, and trustworthy. My house has never looked better.",
@@ -476,7 +480,7 @@ const HomePage = () => {
             <div>
               <h3 className="text-white font-semibold mb-4">Company</h3>
               <ul className="space-y-2 text-gray-300">
-                <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
+                <li><a onClick={aboutme} href="#" className="hover:text-white transition-colors">About Us</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
